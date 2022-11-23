@@ -1,0 +1,17 @@
+<template>
+    <lightning-card title="LWC Input Commond Variable">
+        This is lightninig input variable commond practice code. <br/><br/>
+        <lightning-layout >
+            <lightning-layout-item size="4" >
+<lightning-input label="Enter Name" type="text" name={name} value={name} onchange={callme}></lightning-input>
+<lightning-input label="Enter Phone" type="text" name={phone} value={phone} onchange={callme}></lightning-input>
+<lightning-input label="Enter DOB" type="date" name={dob} value={dob} onchange={callme}></lightning-input>
+<lightning-input label="Enter Login D/T" type="datetime" name={login}  value={login} onchange={callme}></lightning-input>
+<lightning-input label="Check is_Active" type="checkbox" name={act} value={act} onchange={callme}></lightning-input>                
+            </lightning-layout-item>
+<lightning-layout-item size="4">
+        <lightning-button label="Submit" onclick={showme}></lightning-button>
+</lightning-layout-item>
+        </lightning-layout>        
+    </lightning-card>
+</template>
