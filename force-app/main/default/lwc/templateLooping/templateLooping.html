@@ -1,0 +1,30 @@
+<template>
+  <!-- <lightning-card title="Template Looping Page">
+    <h1><strong>****** For:Each with Array******</strong></h1>
+    <div class="slds-box slds-box_xx-small">
+      <template for:each={aname} for:item="arr">
+        <ul key={arr}>
+          <li class="slds-line-clamp">{arr}</li>
+        </ul>
+      </template>
+    </div>
+  </lightning-card>
+
+  <lightning-card title="For:Each with Object">
+    <template for:each={aobj} for:item="obj">
+      <div key={obj}>{obj.name} {obj.phone}</div>
+    </template>
+  </lightning-card> -->
+
+  <!-- ***************************************** Iterator Directive ***************************************************** -->
+
+  <lightning-card title="Iterator Directive ">
+    <div class="slds-box slds-box_xx-small slds-m-around_small">
+      <template iterator:tr={aobj}>
+        <div key={tr.value.id}>
+          <strong>{tr.value.name}</strong> {tr.value.phone}
+        </div>
+      </template>
+    </div>
+  </lightning-card>
+</template>
